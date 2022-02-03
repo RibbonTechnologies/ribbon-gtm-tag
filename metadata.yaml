@@ -1,5 +1,5 @@
 homepage: "https://www.ribbonapp.com"
 documentation: "https://docs.ribbonapp.com"
 versions:
-  - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
-    changeNotes: Initial Version
+  - sha: a785c03e4c29aac8522ad4e938e059338b597a80
+    changeNotes: Initial Release
