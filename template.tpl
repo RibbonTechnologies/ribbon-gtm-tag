@@ -14,15 +14,15 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Ribbon",
-  "categories":  [
+  "categories": [
     "ANALYTICS",
     "CONVERSIONS",
     "EXPERIMENTATION",
     "SURVEY"
   ],
   "brand": {
-    "id": "brand_dummy",
-    "displayName": "Ribbon",
+    "id": "github.com_RibbonTechnologies",
+    "displayName": "RibbonTechnologies",
     "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSCAYAAADHLIObAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUqSURBVHgB7Z0xbNNAFIafkzCUCcEIiCIBI4EJNlpGGCiCEWi7wNgwwkAbBhhJV5YmsIKAAUZSJspEYQQkgoCxqCx0oIm5/yqjKK3dd753tlPdJ0UOalW5X97de/fuXAJShGE4oy419Roljwkd9aoHQdAMlMQp9Y8F8thwEyK/ko9EWzoQGZLHmhJ5RPAihfAihfAihfAihfAihfAihfAihfAihfAihajQDmd1jWj5R0hvPvVo8XNIyz+JTuxXXZprFRrdS2LsyLU25D3/GFLrbVeLW/2z+Vcc3RfQs+tlOnEgIAl2lEhE3IsPPWq+C7eUtxXNq2WaPG0/w+0IkRBYf9nV1zQ0LpdpZtxO5lCL7PxSHdUnXXquotAW28gcWpHz7R7NveqxhzCHZzcqNHE83Zw5dCIRhdOP1lMP4yT2jBC9v70rVTYfKpGtpR7VnspG4SDI5u9vVbRUE4amIK+rYTz1uOtUIuisIHGZz7lDUZAjoTTa9gklYs/ugMaOBnoIVw+WdPT1v9JQeJHTKgqbS3YSIQ6FNxLJBfXC8JWm0CIRiTYSx46VtLzJU4GW6ZLCisScmHY4Q+DsuZIevllRyKyNKMSQNgVRB4G18exzqNOIRPMAWRCNg2/qivcgukboSX73xtyF9yi0TZmolmjhSsn5EI5DVCSK5A+qZbWoWlaQNygsmfQDY/ZcmebO51vJWYmM2lUvllXD4As5r/EGQfQ9uFSiqdP5l8PGcyTkIfLmX3edLNNMsFkbS8MWiTUuGqWNxTDzyEsC0Th7viza7U7DtiJte31ZgCQ1p7L1ZI5DPFGk9NLMNXlGZ+JHiAQyTKD+HG+s62koa2JF6t2378MTjREouU7e+6t3DrMkVmTWNyIJguDk/XVdmmVFbB35e42sGWxX4do/f7XUbt/cS/OlIBd00kdrFbEt1yRiRZqtSjaAONR1Z1TTYOwIbduuWvzsdupAZF582KV2reI8AVWSboJDJA+lh0m3RRf2n3giH6jtUqzB0REy/YDx/YhMyHRJ6p9u2+vjzsGI6qibg/IGDY264XSgV2KqjJtx2BUy/skQiE+3PbOxqZ622/KGWeAPRjkK7693K8ZdbszFqwLzfhxskf0CJRqm3JXSxPHNtwiJkGmykoHE+dfu5uRt7wQZT1JgBDc6qgfiv2Z6OqLRdheVsXdRVQIxyWOP10XLnlPsI8FsN4QhE6OFAyS2ltxEZewdIJG4atlzMy+3/tOd8RHe90qcE9qKQh8Q4O4x68x+lveruFqx5SKS21QwqQh0BcGIyugErzS5iHSxykD0TlR54r+tkDiFHtqmqxhubekic+cikjtk8+grpiUfkSO86On07YVz4M59h/aROLkNbW5p01riyUH0ckubtCfOkii8SKxGOEMc+0scINFFfzI3kWeO8hND0j4Mvo5zQtxoxNEWF+R6iOrwnXWjORCrLYg4pOZXCMTTXCbP1AD0DVwseXMViUaty62GQaKukQtyrSO5qxEp0MFyRa4iMfHPZnSKDCfWXBx5jsh9ZYMOk6sEEJHFsb9CLBEXrpadbZlmdXayMEefkb2xdSrVmcn67GThzpCn2SXsBwKRxGpjQabHoAt5GF8/faWEmjwagkSC/ZusBUYU+llECNUPs38M/x/sj9APIe3fWO65egjJBP9nD4Xwf2VFCC9SCC9SCC9SCC9SCC9SCC9SCC9SCC9SCC9SCC9SCC9SCIjskMeWDkTOk8eWeikIgoZ6M00+MtPQIfxfNkHQ/AdJ/UN4Z4LriQAAAABJRU5ErkJggg\u003d\u003d"
   },
   "description": "Install the Ribbon tag on your website and run continuous user research with your users. More info in our documentation at https://docs.ribbonapp.com",
@@ -70,6 +70,10 @@ ___TEMPLATE_PARAMETERS___
       {
         "value": "trigger",
         "displayValue": "Trigger"
+      },
+      {
+        "value": "identify",
+        "displayValue": "Identify"
       }
     ],
     "simpleValueType": true,
@@ -134,6 +138,19 @@ ___TEMPLATE_PARAMETERS___
     "editRowTitle": "Edit attribute",
     "newRowButtonText": "New attribute",
     "newRowTitle": "New attribute"
+  },
+  {
+    "type": "TEXT",
+    "name": "identity",
+    "displayName": "Identity",
+    "simpleValueType": true,
+    "enablingConditions": [
+      {
+        "paramName": "method",
+        "paramValue": "identify",
+        "type": "EQUALS"
+      }
+    ]
   }
 ]
 
@@ -160,6 +177,9 @@ const process = () => {
       callInWindow('ribbon', 'attributes', formattedAttributes);
       break;
     case 'load-script':
+      break;
+    case 'identify':
+      callInWindow('ribbon', 'identify', data.identity);
       break;
     default:
       data.gtmOnFailure();
