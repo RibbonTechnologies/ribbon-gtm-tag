@@ -1,5 +1,7 @@
 homepage: "https://www.ribbonapp.com"
 documentation: "https://docs.ribbonapp.com"
 versions:
+  - sha: 50500485937dd8201e6a4b53e71cce6e694850ee
+    changeNotes: Add identify method
   - sha: a785c03e4c29aac8522ad4e938e059338b597a80
     changeNotes: Initial Release
